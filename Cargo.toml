@@ -1,0 +1,15 @@
+[package]
+name = "rust-money"
+version = "0.1.0"
+edition = "2021"
+description = "provides basic and precise Money operations such as rounding, splitting and allocating."
+license = "MIT/Apache-2.0"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[source.crates-io]
+replace-with = 'tuna'
+
+[source.tuna]
+registry = "https://mirrors.tuna.tsinghua.edu.cn/git/crates.io-index.git"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
